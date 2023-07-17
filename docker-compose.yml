@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+#名前はなんでもいい(go db react-ts nginxなどの表記が望ましい)
+  go:
+#対象のdockerfileの場所を相対パスで記載
+    build: ./go_app
+#docker-composeで複数コンテナになるから個々にname付与
+    container_name: "app_go"
+#左がホストOSのポート右がコンテナポート
+    ports:
+      - "8000:8000"
+#データの永続化左の相対はホスト側右がコンテナ側
+    volumes:
+      - ./go_app:/app/go
+#ドアを開放状態
+    tty: true
+#ここまでが最低限の内容
