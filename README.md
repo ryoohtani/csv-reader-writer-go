@@ -13,9 +13,9 @@ docker-compose build
 ```
 docker-compose up -d
 ```
-* コンテナにアクセス
+* コンテナにアクセス(app_goはコンテナ名)
 ```
-docker exec -it コンテナの名前 /bin/bash
+docker exec -it app_go  /bin/bash   
 ```
 
 *Pythonのコマンド*
