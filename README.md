@@ -23,3 +23,9 @@ docker exec -it app_go  bash
 ```
 go run ファイル名.go
 ```
+
+*gitのコマンド*
+* プッシュコマンド
+```
+git push -u origin main
+```
