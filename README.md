@@ -7,15 +7,15 @@ A Go-based project for CSV file handling and output generation. It includes feat
 
 * ビルドコマンド
 ```
-docker-compose build
+docker compose build
 ```
 * 環境の立ち上げ
 ```
-docker-compose up -d
+docker compose up -d
 ```
 * コンテナにアクセス(app_goはコンテナ名)
 ```
-docker exec -it app_go  /bin/bash   
+docker exec -it app_go  bash   
 ```
 
 *Pythonのコマンド*
